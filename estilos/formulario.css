@@ -1,0 +1,48 @@
+.main__fieldset{
+  /*  display: inline-block;
+    position: relative;
+    */
+    grid-area: section;
+    padding: 0%;
+    margin: 0%;
+    left: 35vw;
+    border: none;
+}
+.main__form{
+    /*display: inline-block;*/
+    position: relative;
+}
+.main-legend{
+    font-style: italic ;
+}
+.main-label{
+    display: block;
+    position: relative;
+    left: 0%;
+}
+.main-input{
+    display: block;
+    position: relative;
+    margin-left: 6vw;
+}
+.main-textarea{
+    display: block;
+    width: 25vw;
+    height: 10vh;    
+}
+.main-textarea:-moz-placeholder{
+    font-family: "PT Serif", serif;
+}
+.main-boton{
+    position: relative;
+    display: inline-block;
+    left: 30%;
+    font-family: "PT Serif", serif;
+    background-color: #007aad;
+    color: #ffffff;
+    border: 1%;
+    border-color: #007aad;
+    border-radius: 1vw;
+    padding: 1%;
+    margin-top: 1%;
+}
