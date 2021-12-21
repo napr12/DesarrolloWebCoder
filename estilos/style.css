@@ -96,7 +96,7 @@
 }
 .main__ordenada{
   position: relative;
-  display: inline;
+  display: none;
   left: 5vw;
 }
 .footer{
@@ -108,20 +108,28 @@
     height: 25vh;
     width: 100vw;
     font-style: italic; 
-    grid-template-rows: 2;
-    grid-template-columns: 2;
-    grid-template-areas:"h1"
-                        "section" "section";
-    
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:"h2 none"
+                        "mapa social";
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    align-content:center;    
 }
-.footer__li{
+.footer__ul{
   display: inline-block;
-  position:static;
-  right: 0%;
+  grid-area: social;
+  justify-self: center;
+  align-self: center;
 }
 
+.footer__li{
+  list-style: none;
+}
 .footer-h2{
     text-indent: 2vw;
+    grid-area: h2;
    
 }
 .footer-iframe{
@@ -130,6 +138,8 @@
     width: 30vw;
     height: 20vh;
     border: none;
+    grid-area: mapa;
+    
 }
 /*Funcionalidade hover*/
 .main__figure:hover > .main-p{
@@ -140,6 +150,9 @@
 }
 .main__figure:hover > .main-img{
   display:block;
+}
+.main__figure:hover > .main__ordenada{
+  display: inline;
 }
 .main__figure:hover{
   background-color: #ffffff;
